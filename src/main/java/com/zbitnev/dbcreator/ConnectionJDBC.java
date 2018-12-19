@@ -10,7 +10,7 @@ public class ConnectionJDBC implements AutoCloseable {
         try {
             Class.forName("org.postgresql.Driver");
             return connectionMydb = DriverManager
-                    .getConnection("jdbc:postgresql://localhost:5433/mydb", "owner", "zoloto88");
+                    .getConnection("jdbc:postgresql://localhost:5433/mydb", "owner", "*****");
         } catch (Exception e) {
             e.printStackTrace();
             System.err.println(e.getClass().getName() + ": " + e.getMessage());
